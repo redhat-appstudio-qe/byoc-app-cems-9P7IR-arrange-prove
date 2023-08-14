@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: zxdm
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-jppn-tenant/byoc-app-cems/zxdm@sha256:a0297e8d390da5d1d7a03272c201b8a6f862435624065114c0ab39aa97c01caf
+        name: my-java-quarkus
+        resources: {}
+status: {}
