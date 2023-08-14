@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: zxdm
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-jppn-tenant/byoc-app-cems/zxdm@sha256:a0297e8d390da5d1d7a03272c201b8a6f862435624065114c0ab39aa97c01caf
         name: my-java-quarkus
         ports:
         - containerPort: 8081
